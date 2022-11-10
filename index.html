@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Feedback</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Feedback form</h1>
+        <p id="description">Thank you for your precious time</p>
+    </header>
+    <form id="survey-form">
+        <fieldset>
+            <label id="name-label">Name <input placeholder="Enter your name" type="text" id="name" required></label>
+            <label id="email-label">Email <input placeholder="Enter your email" type="email" id="email"
+                    required></label>
+            <label id="number-label">Age(optional) <input placeholder="Age" min="10" max="120" type="number"
+                    id="number"></label>
+            <label>How was the previous web page ?
+                <select id="dropdown">
+                    <option value="">(select one)</option>
+                    <option value="1">Good</option>
+                    <option value="2">Nice</option>
+                    <option value="3">Awesome</option>
+                    <option value="4">Other</option>
+                </select>
+            </label>
+            <p>Would you like to code in freeCodeCamp?</p>
+            <label><input type="radio" value="1" name="choice" class="inline" /> Definitely</label>
+            <label><input type="radio" value="2" name="choice" class="inline" /> May be</label>
+            <label><input type="radio" value="3" name="choice" class="inline" /> Not sure</label>
+
+            <p>What would you like to see improved? (Check all that apply)</p>
+            <label><input type="checkbox" value="term1" class="inline" /> Front-end </label>
+            <label><input type="checkbox" value="term2" class="inline" /> Back-end </label>
+            <label><input type="checkbox" value="term3" class="inline" /> Visualization</label>
+            <label><input type="checkbox" value="term4" class="inline" /> Wiki </label>
+            <label><input type="checkbox" value="term5" class="inline" /> Challenges </label>
+            <label><input type="checkbox" value="term6" class="inline" /> Forum </label>
+
+            <label>Any comments or suggestions?
+                <textarea name="bio" rows="3" cols="30" placeholder="Enter your comment here..."></textarea>
+            </label>
+
+
+            <input type="submit" id="submit" value="Submit" />
+    </form>
+</body>
+
+</html>
